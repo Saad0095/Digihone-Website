@@ -28,7 +28,7 @@ const imageVariants = {
 
 const Hero = () => {
   return (
-    <section className="min-h-screen bg-background text-white flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 py-12 md:py-24">
+    <section className="min-h-screen bg-background text-white flex flex-col-reverse md:flex-row items-center md:items-center justify-center gap-10 px-6 md:px-16 py-12 md:py-24">
       {/* Text Section */}
       <motion.div
         className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left p-4"
