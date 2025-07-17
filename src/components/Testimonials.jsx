@@ -38,9 +38,6 @@ const Testimonials = () => {
         className="w-2/3 mx-auto"
       >
         {brandsLogos.map((logo, index) => (
-          //   <SwiperSlide key={index} className="flex justify-center items-center text-center">
-          //     <img src={logo} alt={`Brand ${index + 1}`} />
-          //   </SwiperSlide>
           <SwiperSlide
             key={index}
             className="flex items-center justify-center h-40"

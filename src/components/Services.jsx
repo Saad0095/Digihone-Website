@@ -77,7 +77,7 @@ const Services = () => {
                 <li key={i}>{feature}</li>
               ))}
             </ul>
-            <button className="mt-auto bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-80 transition duration-300">
+            <button className="mt-auto bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-80 transition duration-300 cursor-pointer">
               {service.cta}
             </button>
           </motion.div>
