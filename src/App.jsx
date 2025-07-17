@@ -1,18 +1,21 @@
-import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Services from "./components/Services";
+import Footer from "./components/Footer";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
-    <>
-      <Navbar/>
-      <Hero/>
-      {/* <About/>
-      <Services/>
+    <div className="bg-background text-white overflow-y-hidden">
+      <Navbar />
+      <Hero />
+      {/* <About/> */}
+      <Services />
       <Testimonials/>
-      <Pricing/>
-      <Contact/>
-      <Footer/> */}
-    </>
+      {/* <Pricing/> */}
+      {/* <Contact/> */}
+      <Footer />
+    </div>
   );
 }
 

@@ -10,7 +10,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-/* src/index.css or App.css */
+ 
 ::-webkit-scrollbar {
   width: 10px;
 }

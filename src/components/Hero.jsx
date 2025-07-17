@@ -31,12 +31,12 @@ const Hero = () => {
     <section className="min-h-screen bg-background text-white flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 py-12 md:py-24">
       {/* Text Section */}
       <motion.div
-        className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left"
+        className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left p-4"
         initial="hidden"
         animate="visible"
       >
         <motion.h1
-          className="text-3xl md:text-5xl font-extrabold leading-tight tracking-wide"
+          className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight tracking-wide"
           variants={textVariants}
           custom={1}
         >
@@ -72,7 +72,7 @@ const Hero = () => {
 
       {/* Image Section */}
       <motion.div
-        className="w-full md:w-1/2 flex justify-center items-center mb-10 md:mb-0"
+        className="w-full md:w-1/2 flex justify-center items-center mb-10 md:mb-0 p-4"
         initial="hidden"
         animate="visible"
         variants={imageVariants}
