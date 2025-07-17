@@ -10,3 +10,19 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+/* src/index.css or App.css */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1A2433;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #42BDAC; 
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
