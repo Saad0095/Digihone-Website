@@ -31,7 +31,7 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <button className="hidden md:flex bg-primary text-white border-2 border-primary hover:text-primary hover:bg-white px-6 py-3 rounded-md transition duration-300 cursor-pointer">
+      <button className="hidden md:flex bg-primary text-white border-2 border-primary hover:text-primary hover:bg-white px-6 py-3 rounded-md transition duration-300 cursor-pointer font-semibold">
         <a href="#contact">Contact Us</a>
       </button>
 
@@ -64,7 +64,7 @@ const Navbar = () => {
             ))}
             <a
               href="#contact"
-              className="bg-primary text-white px-4 py-2 rounded-md hover:opacity-90 transition w-max"
+              className="bg-primary text-white font-semibold px-4 py-2 rounded-md hover:opacity-90 transition w-max"
               onClick={() => setIsOpen(false)}
             >
               Contact Us
