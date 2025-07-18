@@ -14,7 +14,11 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-center items-center mx-auto">
-      <div className= {`bg-white text-black px-4 md:px-8 h-20 flex items-center justify-between shadow-md fixed top-0 z-50 w-11/12 ${isOpen ? "rounded-none" : "rounded-b-2xl"} md:rounded-b-2xl`} >
+      <div
+        className={`bg-white text-black px-4 md:px-8 h-20 flex items-center justify-between shadow-md fixed top-0 z-50 w-11/12 ${
+          isOpen ? "rounded-none" : "rounded-b-2xl"
+        } md:rounded-b-2xl`}
+      >
         {/* Logo */}
         <div className="text-xl md:text-2xl font-bold">Digihone Website</div>
 
@@ -32,9 +36,21 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <button className="hidden md:flex bg-primary text-black border-2 border-primary hover:text-primary hover:bg-white px-6 py-3 rounded-md transition duration-300 cursor-pointer font-semibold">
-          <a href="#contact">Contact Us</a>
-        </button>
+        {/* Desktop Buttons */}
+        <div className="hidden md:flex justify-center items-center gap-4">
+          <a
+            href="#contact"
+            className="bg-white text-black border-2 border-black hover:text-primary px-6 py-3 rounded-md transition duration-300 cursor-pointer font-semibold"
+          >
+            Schedule a Consult
+          </a>
+          <a
+            href="#contact"
+            className="bg-primary text-black border-2 border-primary hover:text-primary hover:bg-white px-6 py-3 rounded-md transition duration-300 cursor-pointer font-semibold"
+          >
+            Request Info
+          </a>
+        </div>
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
@@ -63,6 +79,13 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
+              <a
+                href="#contact"
+                className="bg-white text-black border-2 border-black hover:text-primary transition duration-300 cursor-pointer font-semibold px-4 py-3 text-center rounded-md w-full"
+                onClick={() => setIsOpen(false)}
+              >
+                Schedule a Consult
+              </a>
               <a
                 href="#contact"
                 className="bg-primary text-white border-2 border-primary hover:text-primary hover:bg-white transition duration-300 cursor-pointer font-semibold px-4 py-3 text-center rounded-md w-full"
