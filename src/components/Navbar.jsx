@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-center items-center mx-auto">
-      <div className="bg-white text-black px-4 md:px-8 h-20 flex items-center justify-between shadow-md fixed top-0 z-50 rounded-b-2xl w-11/12">
+      <div className= {`bg-white text-black px-4 md:px-8 h-20 flex items-center justify-between shadow-md fixed top-0 z-50 w-11/12 ${isOpen ? "rounded-none" : "rounded-b-2xl"} md:rounded-b-2xl`} >
         {/* Logo */}
         <div className="text-xl md:text-2xl font-bold">Digihone Website</div>
 
@@ -32,13 +32,13 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <button className="hidden md:flex bg-primary text-white border-2 border-primary hover:text-primary hover:bg-white px-6 py-3 rounded-md transition duration-300 cursor-pointer font-semibold">
+        <button className="hidden md:flex bg-primary text-black border-2 border-primary hover:text-primary hover:bg-white px-6 py-3 rounded-md transition duration-300 cursor-pointer font-semibold">
           <a href="#contact">Contact Us</a>
         </button>
 
         {/* Mobile Menu Toggle */}
-        <div className="md:hidden cursor-pointer">
-          <button onClick={() => setIsOpen(!isOpen)}>
+        <div className="md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)} className="cursor-pointer">
             {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
         </div>
@@ -51,7 +51,7 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
-              className="absolute top-20 left-0 w-full bg-background text-white flex flex-col gap-6 px-6 py-4 md:hidden shadow-lg"
+              className="absolute top-20 left-0 w-full bg-white text-black flex flex-col gap-6 px-6 py-4 md:hidden shadow-lg rounded-b-2xl"
             >
               {navLinks.map((link, index) => (
                 <a
@@ -65,7 +65,7 @@ const Navbar = () => {
               ))}
               <a
                 href="#contact"
-                className="bg-primary text-white font-semibold px-4 py-2 rounded-md hover:opacity-90 transition w-max"
+                className="bg-primary text-white border-2 border-primary hover:text-primary hover:bg-white transition duration-300 cursor-pointer font-semibold px-4 py-3 text-center rounded-md w-full"
                 onClick={() => setIsOpen(false)}
               >
                 Contact Us
