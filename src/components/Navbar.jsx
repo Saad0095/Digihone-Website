@@ -13,7 +13,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white text-black px-4 md:px-8 h-20 flex items-center justify-between shadow-md sticky top-0 z-50">
+    <nav className="bg-white text-black px-4 md:px-8 h-20 flex items-center justify-between shadow-md sticky top-0 z-50 w-11/12 rounded-b-2xl mx-auto">
       {/* Logo */}
       <div className="text-xl md:text-2xl font-bold">Digihone Website</div>
 
@@ -36,7 +36,7 @@ const Navbar = () => {
       </button>
 
       {/* Mobile Menu Toggle */}
-      <div className="md:hidden">
+      <div className="md:hidden cursor-pointer">
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
