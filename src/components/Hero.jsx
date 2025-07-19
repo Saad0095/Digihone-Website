@@ -35,7 +35,11 @@ const Hero = () => {
         initial="hidden"
         animate="visible"
       >
-        <h4 className="text-primary font-semibold text-lg tracking-[8px]">COLD CALLING</h4>
+        <div className="absolute -left-10 top-[40%] w-60 h-60 bg-primary opacity-30 rounded-full blur-3xl z-0" />
+
+        <h4 className="text-primary font-semibold text-lg tracking-[8px]">
+          COLD CALLING
+        </h4>
         <motion.h1
           className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight tracking-wide"
           variants={textVariants}
@@ -51,12 +55,13 @@ const Hero = () => {
           variants={textVariants}
           custom={2}
         >
-          From lead generation to walk-through appointments, we’ve got your sales pipeline covered.
+          From lead generation to walk-through appointments, we’ve got your
+          sales pipeline covered.
         </motion.p>
 
         <motion.a
           href="#contact"
-          className="mt-4 inline-block bg-primary text-white text-xl font-semibold px-6 py-3 rounded-md w-max mx-auto md:mx-0 hover:text-[#108b7a] duration-300" 
+          className="mt-4 inline-block bg-primary text-white text-xl font-semibold px-6 py-3 rounded-md w-max mx-auto md:mx-0 hover:text-[#108b7a] duration-300"
           variants={textVariants}
           custom={3}
           whileTap={{ scale: 0.95 }}
