@@ -16,9 +16,11 @@ const brandsLogos = [
 const Testimonials = () => {
   return (
     <div className="px-5 py-16 bg-background text-white gap-4">
-      <h1 className="text-3xl md:text-4xl font-bold text-center md:w-1/2 mx-auto mb-10 leading-normal">
+      <h1 className="text-3xl md:text-4xl font-bold text-center mx-auto mb-10 leading-normal">
         <span className="text-primary">Trusted by B2B Companies </span>
-        Who Hate Wasting Time on Unqualified Leads
+        Who Hate {" "}
+        <br className="hidden md:block"/>
+        Wasting Time on Unqualified Leads
       </h1>
 
       <Swiper

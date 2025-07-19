@@ -6,7 +6,7 @@ import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
-    <div className="bg-background text-white overflow-y-hidden">
+    <div className="bg-background text-white overflow-y-hidden md:px-10">
       <Navbar />
       <Hero />
       {/* <About/> */}

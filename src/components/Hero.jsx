@@ -28,13 +28,14 @@ const imageVariants = {
 
 const Hero = () => {
   return (
-    <section className="min-h-screen bg-background text-white flex flex-col-reverse md:flex-row items-center md:items-center justify-center gap-10 px-6 md:px-16 pb-12 md:pb-24 pt-32">
+    <section className="min-h-screen bg-background text-white flex flex-col-reverse md:flex-row items-center md:items-center justify-center gap-10 px-6 md:px-12 pb-12 md:pb-24 pt-32">
       {/* Text Section */}
       <motion.div
         className="w-full md:w-1/2 flex flex-col gap-4 text-center md:text-left p-4"
         initial="hidden"
         animate="visible"
       >
+        <h4 className="text-primary font-semibold text-lg tracking-[8px]">COLD CALLING</h4>
         <motion.h1
           className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight tracking-wide"
           variants={textVariants}
@@ -46,13 +47,11 @@ const Hero = () => {
         </motion.h1>
 
         <motion.p
-          className="text-base md:text-lg text-gray-300 leading-relaxed"
+          className="text-base md:text-lg text-white leading-relaxed"
           variants={textVariants}
           custom={2}
         >
-          We handle the hard work of cold email, cold calling, and LinkedIn
-          outreach so you can focus on closing deals. From lead generation to
-          walk-through appointments, we’ve got your sales pipeline covered.
+          From lead generation to walk-through appointments, we’ve got your sales pipeline covered.
         </motion.p>
 
         <motion.a
@@ -72,7 +71,7 @@ const Hero = () => {
 
       {/* Image Section */}
       <motion.div
-        className="w-full md:w-1/2 flex justify-center items-center mb-10 md:mb-0 p-4"
+        className="w-full md:w-1/2 flex justify-end mb-10 md:mb-0 p-4"
         initial="hidden"
         animate="visible"
         variants={imageVariants}
