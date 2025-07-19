@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -8,9 +8,28 @@
 }
 
 body {
+  /* font-family: "Inter", sans-serif; */
   font-family: "Roboto", sans-serif;
 }
 
+.shadow-inset {
+  background-image: linear-gradient(#42bdac1a, #42bdac00);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -24,8 +43,4 @@ body {
   background-color: #42bdac;
   border: 2px solid transparent;
   background-clip: content-box;
-}
-
-.shadow-inset {
-  background-image: linear-gradient(#42bdac1a, #42bdac00);
 }

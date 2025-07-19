@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
+import ScrollingText from "./components/ScrollingText";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       {/* <About/> */}
       <Services />
       <Testimonials/>
+      <ScrollingText/>
       {/* <Pricing/> */}
       {/* <Contact/> */}
       <Footer />

@@ -15,11 +15,14 @@ const brandsLogos = [
 ];
 const Testimonials = () => {
   return (
-    <div className="px-5 py-16 bg-background text-white gap-4">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mx-auto mb-10 leading-normal">
+    <div className="px-5 py-16 bg-background text-white gap-4 space-y-6">
+      <h4 className="text-primary font-semibold text-lg tracking-[5px] text-center">
+        TRUSTED
+      </h4>
+
+      <h1 className="text-3xl md:text-[44px] font-bold text-center mx-auto mb-10 leading-normal">
         <span className="text-primary">Trusted by B2B Companies </span>
-        Who Hate {" "}
-        <br className="hidden md:block"/>
+        Who Hate <br className="hidden md:block" />
         Wasting Time on Unqualified Leads
       </h1>
 
